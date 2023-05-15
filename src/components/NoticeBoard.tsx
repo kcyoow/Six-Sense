@@ -2,7 +2,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const NoticeCont = styled.div`
-${tw`w-1/5`}
+${tw`w-1/5 min-w-[300px] ml-3 select-none`}
 `
 const NoticeMainTitleCont = styled.div`
 ${tw`border-orange-500 border-b-[5px] text-2xl font-semibold mt-16`}
