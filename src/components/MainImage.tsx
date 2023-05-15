@@ -8,10 +8,10 @@ const MainImage = styled.div`
   ${tw`relative`}
 `
 const ImageText = styled.div`
-  ${tw`absolute px-[2px] pt-[5px] pb-[3px] text-center top-[5%] left-[50%] text-white text-4xl translate-x-[-50%] border-b-2 border-orange-500`}
+  ${tw`absolute px-[2px] pt-[5px] pb-[3px] text-center top-[5%] left-[50%] text-white text-4xl translate-x-[-50%] border-b-2 border-orange-500 select-none`}
 `
 const ImageSubText = styled.div`
-  ${tw`absolute pt-[5px] pb-[1px] text-center top-[20%] left-[50%] text-sm translate-x-[-50%] border-b-2 text-orange-500`}
+  ${tw`absolute pt-[5px] pb-[1px] text-center top-[20%] left-[50%] text-sm translate-x-[-50%] border-b-2 text-orange-500 select-none`}
 `
 const Background = styled.div`
   ${tw`h-full w-full`}
