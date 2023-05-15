@@ -15,18 +15,18 @@ export const Header = () => {
   return (
     <div>
       <Nav>
-        <Link to={`/`}>
+        <Link to={`/`} className='prevent-drag'>
           <NavCont>
-            <Image src='apple.png' height='4px' width='20px'>
+            <Image src='apple.png' height='4px' width='20px' className='prevent-drag'>
             </Image>
           </NavCont>
         </Link>
-        <Link to={`/`}>
+        <Link to={`/`} className='prevent-drag'>
           <NavCont>
             {'육감'}
           </NavCont>
         </Link>
-        <Link to={`/intro`}>
+        <Link to={`/intro`} className='prevent-drag'>
           <NavCont>
             {'오감키트 소개'}
           </NavCont>

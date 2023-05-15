@@ -22,7 +22,7 @@ export const MainPageImage = () => {
         <Background>
           <MainImage>
             <Image>
-              <img src="test.png" className="w-full h-full object-none"/>
+              <img src="test.png" className="w-full h-full object-none prevent-drag"/>
             </Image>
             <ImageText>
               <p>&nbsp;오감에 감을 더하다.&nbsp;</p>
