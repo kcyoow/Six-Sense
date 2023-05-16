@@ -20,10 +20,12 @@ export const HomePage = () => {
       <MainPageImage/>
       <Cont>
         <Cards>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
+         {/* src: 이미지 파일, title: card 타이틀, subtitle: card 서브타이틀 alt: 이미지 
+         대체문구 pay: 가격(예: 30,000) paperLink: 논문 주소 */}
+          <Card src="" title="띄워요! 물 오감키트" subtitle="물을 이용한 중력 오감놀이 키트" pay="30,000" alt="이미지1" paperLink="https://www.naver.com"/>
+          <Card src="" title="" subtitle="" alt="이미지2" pay="" paperLink=""/>
+          <Card src="" title="" subtitle="" alt="이미지3" pay="" paperLink=""/>
+          <Card src="" title="" subtitle="" alt="이미지4" pay="" paperLink=""/>
         </Cards>
         <NoticeBoard/>
       </Cont>

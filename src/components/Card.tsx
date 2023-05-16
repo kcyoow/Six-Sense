@@ -21,15 +21,24 @@ const CardLink = styled.div`
 ${tw`text-center text-[11px] font-semibold text-orange-500 underline`}
 `
 
-export const Card = () => {
+interface Props {
+    src: string,
+    alt: string,
+    title: string,
+    subtitle: string,
+    pay: string,
+    paperLink: string
+}
+
+export const Card = (props: Props) => {
     return(
         <CardCont>
-            <CardImg src="test.png" alt="이미지" className='prevent-drag'/>
-            <CardTitle>띄워요! 물 오감키트</CardTitle>
-            <CardSubtitle>물을 이용한 중력 오감놀이 키트</CardSubtitle>
-            <CardMoneyText>30,000&#92;</CardMoneyText>
+            <CardImg src={props.src} alt={props.alt} className='prevent-drag'/>
+            <CardTitle>{props.title != "" ? props.title : '타이틀'}</CardTitle>
+            <CardSubtitle>{props.subtitle != "" ? props.subtitle : '서브타이틀'}</CardSubtitle>
+            <CardMoneyText>{props.pay != "" ? props.pay : '0'}&#92;</CardMoneyText>
             <CardLink>
-                <Link to={`https://www.naver.com`} className="hover:box-decoration-clone hover:bg-indigo-200 prevent-drag">
+                <Link to={`${props.paperLink}`} className="hover:box-decoration-clone hover:bg-indigo-200 prevent-drag">
                     {'근거 논문>'}
                 </Link>
             </CardLink>
