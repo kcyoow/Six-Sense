@@ -5,7 +5,7 @@ import ItemDetailPage from './pages/ItemDetailPage';
 import Header from './components/Header';
 function App() {
   return (
-    <div>
+    <div className='min-w-[800px]'>
       <BrowserRouter>
       <Header />
         <Routes>

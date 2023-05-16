@@ -1,1 +1,5 @@
 export * from "./HomePage"
+export * from "../components/MainImage"
+export * from "../components/Header"
+export * from "../components/Card"
+export * from "../components/NoticeBoard"
